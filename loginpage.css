@@ -1,0 +1,206 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+   
+   * {
+      font-family: 'Quicksand', sans-serif;
+    }
+body{
+   background-color: black;
+
+}
+
+
+
+.box1{
+   display: flex;
+   flex-direction: row;
+    height:100px;
+    width: 100px;
+    /* box-shadow:1px 2px 3px rgb(88, 86, 86); */
+    background-color:  rgb(0, 0, 0);
+    margin-left:3px;
+    transition: hover 0.15s;
+    z-index: 2;
+}
+.box1:hover{
+    background-color: red;
+}
+.container,.container2,.container3,.box,.container4,.container5,.container6{
+    display: flex;
+    flex-direction: row;
+}
+.class1,.class2,.class3,.box1,.class4,.class5,.class6{
+   display: flex;
+   flex-direction: row;
+    margin-right: 0;
+    margin-top: 3px;
+    height:100px;
+    width: 100px;
+    /* box-shadow:1px 2px 3px rgb(88, 86, 86); */
+    background-color: rgb(28, 28, 28);
+    margin-left:3px;
+    transition: hover 10s;
+    z-index: 2;
+}
+.class1:hover,.class2:hover,.class3:hover,.box1:hover,.class4:hover,.class5:hover,.class6:hover{
+    background-color:rgb(0, 229, 255);
+    animation-name: example;
+    animation-duration: 6s;
+}
+@keyframes example {
+  
+  50% {background-color: rgb(0, 229, 255);}
+  50% {background-color:rgb(68, 68, 68);}
+}
+ section {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    /* Animated gradient effect */
+    section::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#000, rgb(0, 170, 255), #000);
+      animation: animate 5s linear infinite ;
+    }
+
+    /* Animation keyframes */
+    @keyframes animate {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+    .card  .form .username input,
+    .card  .form .password input{
+      position: relative;
+      width: 100%;
+      background: rgb(67, 67, 67);
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1em;
+      box-shadow: 1px 2px 6px rgba(0,0,0,0.9) ;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 100px;
+      border-radius: 15px;
+    }
+    
+
+    .card{
+      position: absolute;
+      z-index: 3;
+      height: 400px;
+      width: 400px;
+      box-shadow: 3px 6px 8px 10px rgba(0,0,0,0.9);
+      background-color:rgb(43, 43, 43);
+    }
+
+    .card .form h2{
+      margin-top:10px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 170, 255);
+      text-transform: uppercase;
+      font-size: 30px;
+    
+    }
+    .card .form .username{
+      display: flex;
+      margin-bottom: 30px;
+      align-items: flex-end;
+
+    }
+    .card .form .username label{
+      position: relative;
+      left: 25px;
+      color: rgb(0, 170, 255);
+      text-transform: uppercase;
+    }
+    .card .form .username input{
+         top: 40px;
+         right: 65px;
+         width: 200px;
+         }
+    .card .form .password{
+      display: flex;
+      align-items: flex-end;
+      
+     }
+    .card .form .password label{
+      position: relative;
+      left: 25px;
+      top: 35px;
+      color: rgb(0, 170, 255);
+      text-transform: uppercase;
+    }
+    .card .form .password input{
+        right: 60px;
+        top: 70px;
+         width: 200px;
+    }
+
+    .card .form .inputBox{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 150px;
+    }
+    .card .form .links{
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      top: 100px;
+      right: 15px;
+    }
+    .card .form .links a{
+      text-decoration: none;
+      color: white;
+    }
+     .card .form .links a:hover{
+      /* text-decoration: navajowhite; */
+    }
+    .card .form .links a:nth-child(2){
+       position: relative;
+       left: 28px;
+       font-weight: 600;
+       color:rgb(0, 170, 255); ;
+    }
+    
+
+    .card .form .inputBox input[type="submit"]{
+        display: flex;
+        justify-content: center;
+       padding-left: 120px;
+       padding-right: 120px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+       border: none;
+       color: white;
+       background-color: rgb(0, 170, 255);
+        font-weight: 600;
+       font-size: 1.35em;
+       letter-spacing: 0.05em;
+    }
+   input[type="submit"]:active {
+      opacity: 0.6;
+    }
+    
